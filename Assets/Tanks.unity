@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -139,8 +139,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.66, y: 1.99, z: 1.79}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 1.3602675, y: 1.6759093, z: 1.6334075}
+  m_Center: {x: 0.052184463, y: 0.69075525, z: -0.3045783}
 --- !u!114 &96212754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,9 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbbbd88255f7c954a9c8af7b54758bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5109268076672165372, guid: f51e72a640f705a41b58f1d4a283e2c0, type: 3}
+  bullet: {fileID: 5109268076672165372, guid: c39b6c2bf86794c4e853b410825c29eb, type: 3}
   turret: {fileID: 1571149760}
   enemy: {fileID: 620903246}
+  turretBase: {fileID: 1912526122}
 --- !u!1 &620903246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1043457633746962670, guid: f8df63ccbdfa54d54833de3ea7e2ce5a, type: 3}
@@ -189,8 +190,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.05, y: 1.6600001, z: 1.52}
-  m_Center: {x: 0, y: 0.87, z: 0}
+  m_Size: {x: 2.05, y: 1.6600001, z: 1.5999465}
+  m_Center: {x: 6.398703e-16, y: 0.87, z: -0.17002684}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552892051}
   m_LocalRotation: {x: -0.1407285, y: 0, z: 0, w: 0.9900482}
-  m_LocalPosition: {x: -0, y: 0.765, z: 1.837}
+  m_LocalPosition: {x: -0, y: 0.531, z: 1.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -583,7 +584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571149760}
   m_LocalRotation: {x: -0.1407285, y: 0, z: 0, w: 0.9900482}
-  m_LocalPosition: {x: 0, y: 0.852, z: 2.043}
+  m_LocalPosition: {x: 0, y: 0.542, z: 0.973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
