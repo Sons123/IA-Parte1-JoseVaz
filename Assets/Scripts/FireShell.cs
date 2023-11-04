@@ -31,7 +31,7 @@ public class FireShell : MonoBehaviour {
 
         Vector3 p = enemy.transform.position - this.transform.position;
         Vector3 v = enemy.transform.forward * enemy.GetComponent<Drive>().speed;
-        float s = bullet.GetComponent<MoveShellThank>().speed;
+        float s = bullet.GetComponent<ThankMoveShell>().speed;
 
         float a = Vector3.Dot(v, v) - s * s;
         float b = Vector3.Dot(p, v);
