@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AIControl : MonoBehaviour {
+public class AIControls : MonoBehaviour {
 
     public GameObject goal;
     NavMeshAgent agent;
@@ -15,7 +15,8 @@ public class AIControl : MonoBehaviour {
     }
 
 
-    void Update() {
+    void Update() 
+    {
 
     }
 }
