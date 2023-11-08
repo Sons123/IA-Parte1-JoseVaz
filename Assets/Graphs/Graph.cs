@@ -65,7 +65,7 @@ public class Graph
             Node thisNode = open[i];
             if(thisNode.getId() == endId)
             {
-                //ReconstructPath(start, end);
+                ReconstructPath(start, end);
                 return true;
             }
             open.RemoveAt(i);
@@ -81,7 +81,7 @@ public class Graph
                 tentative_g_score = thisNode.g + distance(thisNode, neighbour);
                 if(open.IndexOf(neighbour) == -1)
                 {
-                    open: Add(neighbour);
+                    open.Add(neighbour);
                     tentative_is_better = true;
 
                 }
@@ -102,6 +102,19 @@ public class Graph
             }
         }
         return false;
+    }
+    public void ReconstructPath(Node startId, Node endId)
+    {
+        pathList.Clear();
+        pathList.Add(endId);
+
+        var p = endId.cameFrom;
+        while (p != startId && p != null)
+        {
+            pathList.Insert(0, p);
+            p = p.cameFrom;
+        }
+        pathList.Insert(0, startId);
     }
 
     float distance(Node a, Node b)
