@@ -63,7 +63,7 @@ public class Graph
         {
             int i = lowestF(open);
             Node thisNode = open[i];
-            if(thisNode.getId() == indId)
+            if(thisNode.getId() == endId)
             {
                 //ReconstructPath(start, end);
                 return true;
