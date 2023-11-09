@@ -31,9 +31,24 @@ public class FollowWp : MonoBehaviour
         currentWP = 0;
     }
 
-    public void GoToRuin()
+    public void GotoRuin()
     {
+
+        g.AStar(currentNode, wps[7]);
+        currentWP = 0;
+    }
+
+    public void GotoRock()
+    {
+
         g.AStar(currentNode, wps[1]);
+        currentWP = 0;
+    }
+
+    public void GotoFactory()
+    {
+
+        g.AStar(currentNode, wps[4]);
         currentWP = 0;
     }
 
